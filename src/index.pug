@@ -414,48 +414,19 @@ html(lang='en')
             form.form.form__newsletter(action='', method='post')
               input.form__email.form__email_subs(type='email', placeholder='Enter your email to update')
               input.btn.form__submit.form__submit_newsletter(type='submit')
-        +b.nav-link
-          +e.UL.item
-            +e.li.list
-              +e.A.link(href='')
-                | HALOVIETNAM LTD
-                | 66, Dang Van ngu, Dong Da
-                | Hanoi, Vietnam
-            +e.LI.list
-              +e.A.link(href='mailto:contact@halovietnam.com') contact@halovietnam.com
-            +e.LI.list
-              +e.A.link(href='tel:+84435149182') +844 35149182
-          +e.UL.item
-            +e.LI.list
-              +e.A.link(href='') Examples
-            +e.LI.list
-              +e.A.link(href='') Shop
-            +e.LI.list
-              +e.A.link(href='') License
-          +e.UL.item
-            +e.LI.list
-              +e.A.link(href='') Contact
-            +e.LI.list
-              +e.A.link(href='') About
-            +e.LI.list
-              +e.A.link(href='') Privacy
-            +e.LI.list
-              +e.A.link(href='') Terms
-          +e.UL.item
-            +e.LI.list
-              +e.A.link(href='') Download
-            +e.LI.list
-              +e.A.link(href='') Support
-            +e.LI.list
-              +e.A.link(href='') Documents
-          +e.UL.item
-            +e.LI.list
-              +e.A.link(href='') Media
-            +e.LI.list
-              +e.A.link(href='') Blog
-            +e.LI.list
-              +e.A.link(href='') Forums
+        - var footerListLink = [{link1: "HALOVIETNAM LTD 66, Dang Van ngu, Dong Da Hanoi, Vietnam",link2: "contact@halovietnam.com",link3: "+844 35149182"},{link1: "Examples",link2: "Shop",link3: "License"},{link1: "Contact",link2: "About",link3: "Privacy",link4: "Terms"},{link1: "Download",link2: "Support",link3: "Documents"},{link1: "Media",link2: "Blog",link3: "Forums"}]
 
+        +b.nav-link
+          for name in footerListLink
+            +e.UL.item
+              +e.li.list
+                +e.A.link(href='')= name.link1
+              +e.LI.list
+                +e.A.link(href='mailto:contact@halovietnam.com')= name.link2
+              +e.LI.list
+                +e.A.link(href='tel:+84435149182')= name.link3
+              +e.LI.list
+                +e.A.link(href='')= name.link4
 
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
     script(defer='', src='https://use.fontawesome.com/releases/v5.0.6/js/all.js')
