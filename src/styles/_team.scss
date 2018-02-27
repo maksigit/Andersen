@@ -1,0 +1,63 @@
+.team {
+  padding: 0 15px;
+  margin-top: 264px;
+
+  .container-main {
+    max-width: 865px;
+  }
+}
+
+.team-wrap {
+  margin-top: 46px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team__item {
+  max-width: 163px;
+  text-align: center;
+  margin: 30px auto 0;
+  transition: .4s;
+  padding: 5px;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px #000;
+  }
+}
+
+.team__title {
+  font-size: 22px;
+  font-family: $primary-font;
+  color: $main-color;
+  margin-top: 42px;
+}
+
+.team__subtitle {
+  font-size: 16px;
+  font-family: $primary-font;
+  color: $sub-color;
+  margin-top: 12px;
+}
+
+.team__desc {
+  font-size: 14px;
+  font-family: $primary-font;
+  color: #313841;
+  margin-top: 16px;
+}
+
+.team__icon {
+  margin-top: 13px;
+}
+
+.team__social__link {
+  font-size: 16px;
+  color: $main-color;
+  margin: 0 7px;
+
+  &:hover {
+    color: $hover-color;
+  }
+}

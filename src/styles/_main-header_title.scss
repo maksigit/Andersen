@@ -1,0 +1,32 @@
+.main-header__wrap {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.title_wrap {
+  max-width: 494px;
+  text-align: center;
+}
+
+.main-header__title {
+  font-size: 48px;
+  font-family: $primary-font;
+  color: $header-color;
+  font-weight: bold;
+}
+
+.main-header__subtitle {
+  font-size: 20px;
+  font-family: $primary-font;
+  color: $header-color;
+}
+
+.main-header__arrow {
+  position: absolute;
+  bottom: -40px;
+  font-size: 32px;
+  color: $header-color;
+}

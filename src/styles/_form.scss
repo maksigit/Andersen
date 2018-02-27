@@ -1,0 +1,41 @@
+.form__contact-us {
+  max-width: 485px;
+  display: flex;
+  flex-direction: column;
+  margin: 41px auto 0;
+
+}
+
+.form__email {
+  padding: 20px;
+  border: 1px solid #000;
+  font-size: 16px;
+  font-family: $primary-font;
+}
+
+.form__text {
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #000;
+  font-size: 16px;
+  font-family: $primary-font;
+
+}
+
+.form__message {
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #000;
+  font-size: 16px;
+  font-family: $primary-font;
+}
+
+.form__submit {
+  padding: 20px 0;
+  margin: 20px auto 0;
+  width: 173px;
+  border: none;
+  background: $main-color;
+  color: #fff;
+  transition: .4s;
+}

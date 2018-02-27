@@ -1,0 +1,43 @@
+.main-header {
+  background-color: #fcdb00;
+  min-height: 100vh;
+
+
+  .container-main {
+    padding: 60px 15px 54px;
+    height: 100vh;
+  }
+}
+
+.hide-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 60%;
+  background: #717171;
+  padding: 15px;
+  font-family: $primary-font;
+  z-index: 9;
+}
+
+.hide-menu__item {
+  padding: 15px 0;
+}
+
+.hide-menu__link {
+  font-size: 18px;
+  color: $main-color;
+  transition: .4s;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.hide-menu__item-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}

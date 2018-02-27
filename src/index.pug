@@ -1,0 +1,462 @@
+include bemto-master/bemto.pug
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Tinyone
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
+    link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro', rel='stylesheet')
+    link(rel='stylesheet', href='styles/normalize.css')
+    link(rel='stylesheet', href='styles/all.css')
+  body
+    header.main-header
+      .container-main
+        .main-header__head
+          .mobile-menu
+            i.fas.fa-bars
+          a.logo(href='')
+            img(src='../src/images/logo.png', alt='')
+          +b.UL.social
+            +e.LI.icon
+              +e.A.link(href='')
+                i.fab.fa-facebook-f
+            +e.LI.icon
+              +e.A.link(href='')
+                i.fab.fa-twitter
+            +e.LI.icon
+              +e.A.link(href='')
+                i.fab.fa-google-plus-g
+            +e.LI.icon
+              +e.A.link(href='')
+                i.fab.fa-pinterest
+        .main-header__wrap
+          .title_wrap
+            h1.main-header__title Inspire your inspiration
+            p.main-header__subtitle
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae
+              | eros eget tellus tristique
+              | bibendum. Donec rutrum sed sem quis venenatis.
+            a.btn.btn-head(href='') Get start
+          a.main-header__arrow(href='#tofeatures')
+            i.fas.fa-long-arrow-alt-down
+      +b.UL.hide-menu
+        +e.LI.item
+          +e.A.link(href='#tofeatures') Features
+        +e.LI.item
+          +e.A.link(href='#price') Pricing
+        +e.LI.item
+          +e.A.link(href='#portfolio') Portfolio
+        +e.LI.item
+          +e.A.link(href='#team') Team
+        +e.LI.item
+          +e.A.link(href='#testimonial') Testimonial
+        +e.LI.item
+          +e.A.link(href='#contact-us') Contact us
+        +e.LI.item
+          +e.A.link(href='#subscribe') Subscribe
+        +e.LI.item.__item-close
+          i.far.fa-times-circle
+    main.primary-main
+      +b.SECTION#tofeatures.features
+        .container-main
+          h2.primary-main__title Tinyone features
+          p.primary-main__subtitle
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae
+            | eros eget tellus tristique
+            | bibendum.
+            | Donec rutrum sed sem quis venenatis.
+          +e.wrap
+            +e.item
+              +e.icon
+                i.fas.fa-tablet-alt
+              +e.item__wrap
+                +e.title Fully Responsive
+                +e.P.subtitle
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                  | tristique bibendum.
+            +e.item
+              +e.icon
+                i.far.fa-lemon
+              +e.item__wrap
+                +e.title Fully Layered PSD
+                +e.P.subtitle
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                  | tristique bibendum.
+            +e.item
+              +e.icon
+                i.far.fa-folder
+              +e.item__wrap
+                +e.title Font Awesome Icons
+                +e.P.subtitle
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                  | tristique bibendum.
+            +e.item
+              +e.icon
+                i.fas.fa-code
+              +e.item__wrap
+                +e.title HTML3 & CSS3
+                +e.P.subtitle
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                  | tristique bibendum.
+            +e.item
+              +e.icon
+                i.far.fa-envelope
+              +e.item__wrap
+                +e.title Email Template
+                +e.P.subtitle
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                  | tristique bibendum.
+            +e.item
+              +e.icon
+                i.far.fa-bookmark
+              +e.item__wrap
+                +e.title Free to download
+                +e.P.subtitle
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                  | tristique bibendum.
+      +b.SECTION#price.pricing
+        h2.primary-main__title Pricing And Free Trial
+        p.primary-main__subtitle
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae
+          | eros eget tellus tristique
+          | bibendum.
+          | Donec rutrum sed sem quis venenatis.
+        .pricing-wrap
+          +e.item
+            +e.icon
+              i.fas.fa-tablet-alt.fa-2x
+            +e.title Basic
+            +e.desc
+              | Lorem ipsum dolor sit amet,
+              | consectetur adipiscing elit
+            +e.price FREE
+            +e.time free forever
+            +e.order
+              a.btn.pricing__link(href='') GET FREE NOW
+          +e.item
+            +e.icon
+              i.fas.fa-laptop.fa-2x
+            +e.title Standard
+            +e.desc
+              | Lorem ipsum dolor sit amet,
+              | consectetur adipiscing elit
+            +e.price $99
+            +e.time free forever
+            +e.order
+              a.btn.pricing__link(href='') GET FREE NOW
+          +e.item
+            +e.icon
+              i.fas.fa-desktop.fa-2x
+            +e.title Enterprise
+            +e.desc
+              | Lorem ipsum dolor sit amet,
+              | consectetur adipiscing elit
+            +e.price $199
+            +e.time free forever
+            +e.order
+              a.btn.pricing__link(href='') GET FREE NOW
+      +b.SECTION#portfolio.portfolio
+        .container-main
+          h2.primary-main__title Our works
+          p.primary-main__subtitle
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae
+            | eros eget tellus tristique
+            | bibendum.
+            | Donec rutrum sed sem quis venenatis.
+          +e.wrap
+            +e.item
+              +e.img
+                img(src='images/add.png', alt='')
+                +e.counter
+                  +e.views
+                    i.fas.fa-eye
+                    | 279
+                  +e.published
+                    | 07/03/14
+                    i.far.fa-clock
+              +e.title Fully Responsive
+              +e.subtitle Design / Branding
+            +e.item
+              +e.img
+                img(src='images/clipping-shape.png', alt='')
+                +e.counter
+                  +e.views
+                    i.fas.fa-eye
+                    | 279
+                  +e.published
+                    | 07/03/14
+                    i.far.fa-clock
+              +e.title Fully Responsive
+              +e.subtitle Design / Branding
+            +e.item
+              +e.img
+                img(src='images/clipping-shape-2.png', alt='')
+                +e.counter
+                  +e.views
+                    i.fas.fa-eye
+                    | 279
+                  +e.published
+                    | 07/03/14
+                    i.far.fa-clock
+              +e.title Fully Responsive
+              +e.subtitle Design / Branding
+            +e.item
+              +e.img
+                img(src='images/outline.png', alt='')
+                +e.counter
+                  +e.views
+                    i.fas.fa-eye
+                    | 279
+                  +e.published
+                    | 07/03/14
+                    i.far.fa-clock
+              +e.title Fully Responsive
+              +e.subtitle Design / Branding
+            +e.item
+              +e.img
+                img(src='images/clipping-shape-3.png', alt='')
+                +e.counter
+                  +e.views
+                    i.fas.fa-eye
+                    | 279
+                  +e.published
+                    | 07/03/14
+                    i.far.fa-clock
+              +e.title Fully Responsive
+              +e.subtitle Design / Branding
+            +e.item
+              +e.img
+                img(src='images/clipping-shape-4.png', alt='')
+                +e.counter
+                  +e.views
+                    i.fas.fa-eye
+                    | 279
+                  +e.published
+                    | 07/03/14
+                    i.far.fa-clock
+              +e.title Fully Responsive
+              +e.subtitle Design / Branding
+            +e.item
+              +e.img
+                img(src='images/clipping-shape-5.png', alt='')
+                +e.counter
+                  +e.views
+                    i.fas.fa-eye
+                    | 279
+                  +e.published
+                    | 07/03/14
+                    i.far.fa-clock
+              +e.title Fully Responsive
+              +e.subtitle Design / Branding
+            +e.item
+              +e.img
+                img(src='images/outline-2.png', alt='')
+                +e.counter
+                  +e.views
+                    i.fas.fa-eye
+                    | 279
+                  +e.published
+                    | 07/03/14
+                    i.far.fa-clock
+              +e.title Fully Responsive
+              +e.subtitle Design / Branding
+      +b.SECTION#team.team
+        .container-main
+          h2.primary-main__title Our teaml
+          p.primary-main__subtitle
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae
+            | eros eget tellus tristique
+            | bibendum.
+            | Donec rutrum sed sem quis venenatis.
+          .team-wrap
+            +e.item
+              +e.thumbnails
+                img(src='images/ellipse-7.png', alt='')
+              +e.title John Doe
+              +e.subtitle UI Designer
+              +e.desc
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              +e.icon
+                +e.A.social__link(href='')
+                  i.fab.fa-facebook-f
+                +e.A.social__link(href='')
+                  i.fab.fa-twitter
+                +e.A.social__link(href='')
+                  i.fab.fa-linkedin-in
+            +e.item
+              +e.thumbnails
+                img(src='images/ellipse-8.png', alt='')
+              +e.title John Doe
+              +e.subtitle UI Designer
+              +e.desc
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              +e.icon
+                +e.A.social__link(href='')
+                  i.fab.fa-facebook-f
+                +e.A.social__link(href='')
+                  i.fab.fa-twitter
+                +e.A.social__link(href='')
+                  i.fab.fa-linkedin-in
+            +e.item
+              +e.thumbnails
+                img(src='images/ellipse-9.png', alt='')
+              +e.title John Doe
+              +e.subtitle UI Designer
+              +e.desc
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              +e.icon
+                +e.A.social__link(href='')
+                  i.fab.fa-facebook-f
+                +e.A.social__link(href='')
+                  i.fab.fa-twitter
+                +e.A.social__link(href='')
+                  i.fab.fa-linkedin-in
+            +e.item
+              +e.thumbnails
+                img(src='images/ellipse-10.png', alt='')
+              +e.title John Doe
+              +e.subtitle UI Designer
+              +e.desc
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              +e.icon
+                +e.A.social__link(href='')
+                  i.fab.fa-facebook-f
+                +e.A.social__link(href='')
+                  i.fab.fa-twitter
+                +e.A.social__link(href='')
+                  i.fab.fa-linkedin-in
+      +b.SECTION#testimonial.testimonial
+        .container-main
+          h2.primary-main__title Stats & Testimonial
+          p.primary-main__subtitle
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae
+            | eros eget tellus tristique
+            | bibendum.
+            | Donec rutrum sed sem quis venenatis.
+          .testimonial-wrap
+            +e.item
+              +e.icon
+                i.fas.fa-puzzle-piece
+              +e.total 20
+              +e.desc Products
+            +e.item
+              +e.icon
+                i.fas.fa-cloud-download-alt
+              +e.total 120,000
+              +e.desc Downloads
+            +e.item
+              +e.icon
+                i.fas.fa-users
+              +e.total 1200
+              +e.desc Customers
+            +e.item
+              +e.icon
+                i.fas.fa-thumbs-up
+              +e.total 900
+              +e.desc Like
+          .team-wrap
+            .team__item.team__item-testimonial
+              .team__thumbnails
+                img(src='images/ellipse-7.png', alt='')
+              .team__title John Doe
+              .team__subtitle From Wỏdpress
+              .team__desc.team__desc-testimonial
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                | tristique bibendum. Donec rutrum sed sem quis venenatis.
+                i.fas.fa-quote-left
+                i.fas.fa-quote-right
+      +b.SECTION#contact-us.contact-us
+        .container-main
+          h2.primary-main__title Keep in touch with us
+          p.primary-main__subtitle
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae
+            | eros eget tellus tristique
+            | bibendum.
+            | Donec rutrum sed sem quis venenatis.
+          .contact-us-wrap
+            +e.item
+              +e.icon
+                i.fas.fa-map-marker-alt
+              +e.title Address
+              +e.desc
+                | 66, Dang Van ngu, Dong Da,
+                | Ha noi, Vietnam
+            +e.item
+              +e.icon
+                i.fas.fa-envelope
+              +e.title E-mail
+              +e.desc
+                +e.A.link(href='mailto:contact@halovietnam.com') contact@halovietnam.com
+            +e.item
+              +e.icon
+                i.fas.fa-phone-square
+              +e.title Phone
+              +e.desc
+                +e.A.link(href='tel:+844123456789')
+                  | +844 1234
+                  | 56789
+          form.form.form__contact-us(action='', method='post')
+            input.form__email(type='email', placeholder='Email ')
+            input.form__text(type='text', placeholder='Full name')
+            textarea.form__message(name='', id='', cols='30', rows='10', placeholder='Message')
+            input.btn.form__submit(type='submit', value='Send Message')
+    footer.main-footer
+      .container-main
+        +b#subscribe.newsletter
+          .container-main
+            +e.H2.title Sign up for our newsletter
+            +e.P.subtitle
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae
+              | eros eget tellus tristique
+              | bibendum.
+              | Donec rutrum sed sem quis venenatis.
+            form.form.form__newsletter(action='', method='post')
+              input.form__email.form__email_subs(type='email', placeholder='Enter your email to update')
+              input.btn.form__submit.form__submit_newsletter(type='submit')
+        +b.nav-link
+          +e.UL.item
+            +e.li.list
+              +e.A.link(href='')
+                | HALOVIETNAM LTD
+                | 66, Dang Van ngu, Dong Da
+                | Hanoi, Vietnam
+            +e.LI.list
+              +e.A.link(href='mailto:contact@halovietnam.com') contact@halovietnam.com
+            +e.LI.list
+              +e.A.link(href='tel:+84435149182') +844 35149182
+          +e.UL.item
+            +e.LI.list
+              +e.A.link(href='') Examples
+            +e.LI.list
+              +e.A.link(href='') Shop
+            +e.LI.list
+              +e.A.link(href='') License
+          +e.UL.item
+            +e.LI.list
+              +e.A.link(href='') Contact
+            +e.LI.list
+              +e.A.link(href='') About
+            +e.LI.list
+              +e.A.link(href='') Privacy
+            +e.LI.list
+              +e.A.link(href='') Terms
+          +e.UL.item
+            +e.LI.list
+              +e.A.link(href='') Download
+            +e.LI.list
+              +e.A.link(href='') Support
+            +e.LI.list
+              +e.A.link(href='') Documents
+          +e.UL.item
+            +e.LI.list
+              +e.A.link(href='') Media
+            +e.LI.list
+              +e.A.link(href='') Blog
+            +e.LI.list
+              +e.A.link(href='') Forums
+
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(defer='', src='https://use.fontawesome.com/releases/v5.0.6/js/all.js')
+    script(src='scripts/mobile-menu.js')

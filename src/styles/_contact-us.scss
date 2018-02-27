@@ -1,0 +1,45 @@
+.contact-us{
+  margin-top: 214px;
+  padding: 0 15px;
+
+  .container-main {
+    max-width: 715px;
+  }
+}
+
+.contact-us-wrap {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-us__icon {
+  font-size: 22px;
+  color: #2d2d2d;
+}
+
+.contact-us__item {
+  text-align: center;
+  margin: 20px auto 0;
+  width: 160px;
+}
+
+.contact-us__title {
+  font-size: 24px;
+  font-family: $primary-font;
+  color: $main-color;
+  margin-top: 25px;
+}
+
+.contact-us__desc, .contact-us__link {
+  font-size: 14px;
+  font-family: $primary-font;
+  color: $sub-color;
+  margin-top: 5px;
+  transition: .4s;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
