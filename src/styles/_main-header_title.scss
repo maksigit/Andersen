@@ -12,21 +12,18 @@
 }
 
 .main-header__title {
-  font-size: 48px;
-  font-family: $primary-font;
-  color: $header-color;
-  font-weight: bold;
+  font: bold 3.43rem $primary-font;
+  color: $mine-shaft;
 }
 
 .main-header__subtitle {
-  font-size: 20px;
-  font-family: $primary-font;
-  color: $header-color;
+  font: 1.43rem $primary-font;
+  color: $mine-shaft;
 }
 
 .main-header__arrow {
   position: absolute;
   bottom: -40px;
-  font-size: 32px;
-  color: $header-color;
+  font: 2.29rem $primary-font;
+  color: $mine-shaft;
 }

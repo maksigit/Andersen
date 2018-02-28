@@ -1,3 +1,7 @@
+html {
+  font: 14px $primary-font;
+}
+
 .main-header {
   background-color: #fcdb00;
   min-height: 100vh;
@@ -17,7 +21,7 @@
   width: 60%;
   background: #717171;
   padding: 15px;
-  font-family: $primary-font;
+  font: 1rem $primary-font;
   z-index: 9;
 }
 
@@ -26,8 +30,8 @@
 }
 
 .hide-menu__link {
-  font-size: 18px;
-  color: $main-color;
+  font: 1.29rem $primary-font;
+  color: $black;
   transition: .4s;
 
   &:hover {
@@ -36,8 +40,10 @@
 }
 
 .hide-menu__item-close {
-  position: absolute;
+  position: fixed;
   top: 10px;
-  right: 10px;
   cursor: pointer;
+  left: 60%;
+  z-index: 9;
+  display: none;
 }

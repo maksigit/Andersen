@@ -6,39 +6,39 @@
 }
 
 .logo {
-  margin: auto;
+  margin-left: 25px;
 
-  @media (max-width: 400px) {
-    margin-left: 25px;
+  @media (min-width: $screen-sm) {
+    margin: auto;
   }
 }
 
 .social {
-  color: $header-color;
+  color: $mine-shaft;
   position: absolute;
   right: 0;
 }
 
 .social__icon {
   display: inline-block;
-  margin-left: 24px;
+  margin-left: 5px;
 
   &:first-child {
     margin-left: 0;
   }
 
-  @media (max-width: 500px) {
-    margin-left: 5px;
+  @media (min-width: $screen-sm) {
+    margin-left: 24px;
   }
 }
 
 .social__link {
-  color: $header-color;
+  color: $mine-shaft;
   transition: .4s;
 }
 
 .mobile-menu {
-  color: $header-color;
+  color: $mine-shaft;
   cursor: pointer;
   transition: .4s;
   position: fixed;
@@ -51,7 +51,7 @@
   width: 259px;
   padding: 21px 0;
   text-align: center;
-  color: $main-color;
+  color: $black;
   background: #717171;
   border: 1px solid #717171;
 

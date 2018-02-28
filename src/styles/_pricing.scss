@@ -13,13 +13,12 @@
 .pricing__item {
   max-width: 163px;
   text-align: center;
-  font-family: $primary-font;
   padding: 0 50px 0;
   margin-top: 40px;
 
   &:nth-child(2) {
-    .pricing__icon-1 {
-      background: $main-color;
+    .pricing__icon {
+      background: $black;
       color: #fff;
     }
   }
@@ -38,22 +37,20 @@
 }
 
 .pricing__title {
-  font-size: 24px;
-  font-weight: bold;
+  font: bold 1.71rem $primary-font;
   margin-top: 22px;
-  color: $main-color;
+  color: $black;
 }
 
 .pricing__desc {
-  font-size: 14px;
-  color: $sub-color;
+  font: 1rem $primary-font;
+  color: $gray;
   margin-top: 26px;
 }
 
 .pricing__price {
-  font-size: 32px;
-  font-weight: bold;
-  color: $main-color;
+  font: bold 2.29rem $primary-font;
+  color: $black;
   margin-top: 45px;
 
   &:after {
@@ -61,14 +58,14 @@
     display: block;
     width: 53px;
     height: 2px;
-    background: $main-color;
+    background: $black;
     margin: auto;
   }
 }
 
 .pricing__time {
-  font-size: 16px;
-  color: $sub-color;
+  font: 1.14rem $primary-font;
+  color: $gray;
   margin-top: 8px;
 }
 
@@ -78,8 +75,8 @@
 
 .pricing__link {
   padding: 20px 0;
-  font-size: 16px;
-  border: 1px solid $main-color;
-  color: $main-color;
+  font: 1.14rem $primary-font;
+  border: 1px solid $black;
+  color: $black;
   width: 143px;
 }

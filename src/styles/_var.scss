@@ -1,12 +1,19 @@
 //colors
 
-$header-color: #222222;
-$main-color: #010101;
-$sub-color: #898989;
-$hover-color: #fcdb00;
+$mine-shaft: #222;
+$black: #010101;
+$gray: #898989;
+$school-bus-yellow: #fcdb00;
 
 
 
 //fonts
 
 $primary-font: 'Source Sans Pro', sans-serif;
+
+//@media
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xlg: 1200px;

@@ -3,10 +3,21 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const pug = require('gulp-pug');
+const sourcemaps = require('gulp-sourcemaps');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const mqpacker = require('css-mqpacker');
 
 gulp.task('styles', function () {
+    var proccesors = [
+        autoprefixer({browsers: ['last 2 version']}),
+        mqpacker(),
+    ];
     return gulp.src('src/styles/all.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass())
+        .pipe(postcss(proccesors))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/styles'));
 });
 gulp.task('norm', function () {

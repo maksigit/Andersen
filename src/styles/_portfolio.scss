@@ -32,9 +32,8 @@
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-  font-size: 14px;
+  font: 1rem $primary-font;
   color: #fff;
-  font-family: $primary-font;
 }
 
 .fa-eye {
@@ -46,16 +45,13 @@
 }
 
 .portfolio__title {
-  font-size: 22px;
-  font-family: $primary-font;
-  color: $main-color;
-  font-weight: 700;
+  font: bold 1.57rem $primary-font;
+  color: $black;
   margin-top: 20px;
 }
 
 .portfolio__subtitle {
-  font-size: 15px;
-  font-family: $primary-font;
-  color: $sub-color;
+  font: 1.07rem $primary-font;
+  color: $gray;
   margin-top: 8px;
 }

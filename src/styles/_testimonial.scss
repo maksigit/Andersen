@@ -28,29 +28,25 @@
 }
 
 .testimonial__icon {
-  font-size: 48px;
+  font: 3.43rem $primary-font;
   color: #2d2d2d;
 }
 
 .testimonial__total {
-  font-size: 24px;
-  font-family: $primary-font;
-  color: $main-color;
+  font: bold 1.71rem $primary-font;
+  color: $black;
   margin-top: 23px;
-  font-weight: 700;
 }
 
 .testimonial__desc {
-  font-size: 14px;
-  font-family: $primary-font;
-  color: $sub-color;
+  font: 1rem $primary-font;
+  color: $gray;
   margin-top: 5px;
 }
 
 .team__desc-testimonial {
-  font-size: 20px;
-  font-family: $primary-font;
-  color: $sub-color;
+  font: 1.43rem $primary-font;
+  color: $gray;
   padding: 0 45px;
   position: relative;
 }

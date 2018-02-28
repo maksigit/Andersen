@@ -15,7 +15,7 @@
 }
 
 .contact-us__icon {
-  font-size: 22px;
+  font: 1.57rem $primary-font;
   color: #2d2d2d;
 }
 
@@ -26,20 +26,18 @@
 }
 
 .contact-us__title {
-  font-size: 24px;
-  font-family: $primary-font;
-  color: $main-color;
+  font: 1.71rem $primary-font;
+  color: $black;
   margin-top: 25px;
 }
 
 .contact-us__desc, .contact-us__link {
-  font-size: 14px;
-  font-family: $primary-font;
-  color: $sub-color;
+  font: 1rem $primary-font;
+  color: $gray;
   margin-top: 5px;
   transition: .4s;
 
   &:hover {
-    color: $hover-color;
+    color: $school-bus-yellow;
   }
 }
